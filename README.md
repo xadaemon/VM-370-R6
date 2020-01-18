@@ -1,5 +1,6 @@
 # Preface
-This is an updated for 2020 hardware and software verion of the original package by `Andy Norrie and or Bob Abeles (not clear)` but to whoever it was thanks.
+
+This is an updated for 2020 hardware and software version of the original package by `Andy Norrie and or Bob Abeles (not clear)` but to whoever it was thanks.
 Updated by CardinalBytes \(cb\[AT\]bpmx.io\) on the 18th of january 2020
 ---
 ## Preflight
