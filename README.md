@@ -1,8 +1,9 @@
+
 # Preface
 
 This is an updated for 2020 hardware and software version of the original package by `Andy Norrie and or Bob Abeles (not clear)` but to whoever it was thanks.
-Updated by CardinalBytes \(cb\[AT\]bpmx.io\) on the 18th of january 2020
----
+Updated by CardinalBytes \(cb\[AT\]bpmx.io\) on the 18th of January 2020
+
 ## Preflight
 Before you begin, you will need to have the following:
 * Hercules installed on your Linux system. I'm using 3.13 \(see bellow\).
@@ -12,8 +13,7 @@ Before you begin, you will need to have the following:
 	* VM/370 R6 documentation \(If you have some and want to share drop me an email\)
 	* The DDR tape image files: VMREL6.ddr.aws and CPR6L0.ddr.aws (included in the images folder)
 
-
-Here's what you should have after extracting the package:
+Here's what you should have after extracting the package or cloning the repository:
 
 - dmkddr.aws	`IPLable DDR tape`
 - vm370r6.2020.cnf	`Hercules config file for VM/370`
@@ -72,7 +72,7 @@ Hercules was compiled from sources with clang 9.0.1 and optimizations enabled
     quit
     ```
 
-6. a few more steps
+6. a few more steps:
     repeat step 2
     repeat step 3
 
@@ -89,7 +89,7 @@ Hercules was compiled from sources with clang 9.0.1 and optimizations enabled
 	enable all
 
 9. in another shell window:
-    ```
+	```
 	x3270 -model 3278-2
 	```
     A 3270 window will appear, from its Connect menu select "Other...", then type
@@ -107,4 +107,5 @@ I'm looking into it.
 
 Cheers to all,
 
-Bob Abeles
+CardinalBytes
+
