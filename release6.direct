@@ -1,0 +1,123 @@
+USERID MAINT    CLASS A NAME RELEASE6    DIRECT           11/27/00  21:17:40
+:READ  RELEASE6 DIRECT   B1 MNT194  9/23/85  14:11
+* CHANGE THE NEXT ENTRY FOR YOUR SYSTEM RESIDENCE DEVICE                REL00010
+DIRECTORY 131 3330 VMREL6                                               REL00020
+*                                                                       REL00030
+USER OPERATOR OPERATOR 320K 1M ABCDEG                                   REL00040
+ ACCOUNT ACT1 OPERATOR                                                  REL00050
+ CONSOLE 009 3215                                                       REL00060
+ SPOOL 00C 2540 READER A                                                REL00070
+ SPOOL 00D 2540 PUNCH A                                                 REL00080
+ SPOOL 00E 1403 A                                                       REL00090
+ MDISK 191 3330 008 005 CPR6L0 WR READ WRITE                            REL00100
+ LINK MAINT 194 194 RR                                                  REL00110
+ LINK MAINT 190 190 RR                                                  REL00120
+*                                                                       REL00130
+USER CE CE 320K 1M EFG                                                  REL00140
+ ACCOUNT ACT2 CE                                                        REL00150
+ CONSOLE 009 3215                                                       REL00160
+ SPOOL 00C 2540 READER A                                                REL00170
+ SPOOL 00D 2540 PUNCH A                                                 REL00180
+ SPOOL 00E 1403 A                                                       REL00190
+ MDISK 191 3330 013 004 CPR6L0 WR READ WRITE                            REL00200
+ LINK MAINT 194 194 RR                                                  REL00210
+ LINK MAINT 190 190 RR                                                  REL00220
+*                                                                       REL00230
+USER MAINT CPCMS 720K 16M BCEG                                          REL00240
+ ACCOUNT ACT3 MAINT                                                     REL00250
+ OPTION ECMODE REALTIMER                                                REL00260
+ CONSOLE 009 3215                                                       REL00270
+ SPOOL 00C 2540 READER A                                                REL00280
+ SPOOL 00D 2540 PUNCH A                                                 REL00290
+ SPOOL 00E 1403 A                                                       REL00300
+ MDISK 190 3330 030 085 CPR6L0 MR READ                                  REL00310
+ MDISK 191 3330 017 007 CPR6L0 WR READ                                  REL00320
+ MDISK 194 3330 142 030 CPR6L0 MR READ                                  REL00330
+ MDISK 193 3330 172 030 CPR6L0 MR READ                                  REL00340
+ MDISK 393 3330 202 080 CPR6L0 MR READ                                  REL00350
+ MDISK 294 3330 282 030 CPR6L0 MR READ                                  REL00360
+ MDISK 394 3330 312 090 CPR6L0 MR READ                                  REL00370
+ MDISK 199 3330 029 001 CPR6L0 MR READ                                  REL00380
+*                                                                       REL00390
+ MDISK 131 3330 000 404 VMREL6 MW                                       REL00400
+ MDISK 132 3330 000 404 CPR6L0 R                                        REL00410
+*                                                                       REL00420
+*   THE ABOVE ENTRY SHOULD BE MODIFIED TO MATCH THE ADDRESS AND LABEL   REL00430
+*   OF YOUR SYSTEM RESIDENCE VOLUME.  IT MAY THEN BE USED BY THIS ID    REL00440
+*   TO LOAD A DIRECTORY AND WRITE A CP NUCLEUS.                         REL00450
+*   DELETE THE ' * ' (IN FRONT OF MDISK) ALSO.                          REL00460
+*   CHANGE THE '404' TO A '808' IF YOURS IS A 3330-11                   REL00470
+*                                                                       REL00480
+*****                                                                   REL00490
+USER IVPM1 IVPASS 320K 16M G                                            REL00500
+ ACCOUNT ACT4 IVPM1                                                     REL00510
+ CONSOLE 009 3210                                                       REL00520
+ SPOOL 00C 2540 READER A                                                REL00530
+ SPOOL 00D 2540 PUNCH A                                                 REL00540
+ SPOOL 00E 1403 A                                                       REL00550
+ MDISK 191 3330  001 001 CPR6L0 WR READ WRITE                           REL00560
+ LINK MAINT 194 194 RR                                                  REL00570
+ LINK MAINT 190 190 RR                                                  REL00580
+*                                                                       REL00590
+USER IVPM2 IVPASS 320K 1M G                                             REL00600
+ ACCOUNT ACT5 IVPM2                                                     REL00610
+ CONSOLE 009 3210                                                       REL00620
+ SPOOL 00C 2540 READER A                                                REL00630
+ SPOOL 00D 2540 PUNCH A                                                 REL00640
+ SPOOL 00E 1403 A                                                       REL00650
+ MDISK 191 3330 002 001 CPR6L0 WR READ WRITE                            REL00660
+ LINK MAINT 194 194 RR                                                  REL00670
+ LINK MAINT 190 190 RR                                                  REL00680
+*                                                                       REL00690
+USER RSCS RSCS 512K                                                     REL00700
+ ACCOUNT ACT6 RSCS                                                      REL00710
+ OPTION ECMODE                                                          REL00720
+ CONSOLE 009 3215                                                       REL00730
+ SPOOL 001 2540 READER A                                                REL00740
+ SPOOL 00C 2540 READER A                                                REL00750
+ SPOOL 00D 2540 PUNCH A                                                 REL00760
+ SPOOL 00E 1403 A                                                       REL00770
+ MDISK 191 3330 003 005 CPR6L0 WR READ WRITE                            REL00780
+ LINK MAINT 190 190 RR                                                  REL00790
+ DEDICATE 0B1 078                                                       REL00800
+ DEDICATE 0B2 079                                                       REL00810
+ DEDICATE 0B3 07A                                                       REL00820
+*                                                                       REL00830
+USER ECMODE ECMODE 512K 1M G                                            REL00840
+ ACCOUNT ACT7 ECMODE                                                    REL00850
+ OPTION ECMODE REALTIMER                                                REL00860
+ CONSOLE 009 3215                                                       REL00870
+ SPOOL 00C 2540 READER A                                                REL00880
+ SPOOL 00D 2540 PUNCH A                                                 REL00890
+ SPOOL 00E 1403 A                                                       REL00900
+ MDISK 191 3330 024 005 CPR6L0 WR READ WRITE                            REL00910
+ LINK MAINT 194 194 RR                                                  REL00920
+ LINK MAINT 190 190 RR                                                  REL00930
+*                                                                       REL00940
+USER OPERATNS OPERATNS 512K 1M BCEG                                     REL00950
+ ACCOUNT ACT8 OPERATNS                                                  REL00960
+ CONSOLE 009 3215                                                       REL00970
+ SPOOL 00C 2540 READER A                                                REL00980
+ SPOOL 00D 2540 PUNCH A                                                 REL00990
+ SPOOL 00E 1403 A                                                       REL01000
+ LINK MAINT 190 190 RR                                                  REL01010
+****************                                                        REL01020
+*                                                                       REL01030
+* THE FOLLOWING MINIDISK ENTRY IS PROVIDED AS AN EXAMPLE OF             REL01040
+* THE SPACE RECOMMENDED FOR AN IPCS VIRTUAL MACHINE.                    REL01050
+* IF YOU INTEND TO USE THE OPERATNS USERID AS YOUR IPCS                 REL01060
+* VIRTUAL MACHINE, YOU SHOULD CHANGE THE FOLLOWING STATEMENT            REL01070
+* TO ALLOCATE MINIDISK SPACE ON ONE OF YOUR SYSTEM DASD VOLUMES.        REL01080
+*                                                                       REL01090
+ MDISK 191 3330 115 015 CPR6L0 WR READ WRITE                            REL01100
+*                                                                       REL01110
+****************                                                        REL01120
+*                                                                       REL01130
+*                                                                       REL01140
+*     CYLINDERS 142 TO 403 ARE UNUSED AND MAY BE USED FOR               REL01150
+*     ANY OTHER VIRTUAL MINI DISK SPACE. IT CAN ALSO BE                 REL01160
+*     USED FOR PAGING, SPOOLING OR T-DSK SPACE.                         REL01170
+*                                                                       REL01180
+*                                                                       REL01190
+*                                                                       REL01200
+

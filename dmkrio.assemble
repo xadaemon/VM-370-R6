@@ -1,0 +1,72 @@
+USERID MAINT    CLASS A NAME DMKRIO      ASSEMBLE         11/27/00  21:17:40
+:READ  DMKRIO   ASSEMBLE B1 MNT194  8/28/85  13:50
+NAS      TITLE '  DMKRIO       VM/370 RELEASE 6    '                    DMK00010
+DMKRIO   CSECT                                                          DMK00040
+         EJECT                                                          DMK00050
+**********************************************************************  DMK00830
+*****  CHANNEL ZERO ( 000 ) DEVICES                              *****  DMK00840
+*****  ----------------------------                              *****  DMK00850
+*****          DEVICE ADDRESS      DEVICE TYPE    SPECIAL NOTES  *****  DMK00860
+*****          --------------      -----------    -------------  *****  DMK00870
+*****                009           3277-2 TERM    CONSOLE        *****  DMK00920
+*****                00C           2540R  READER  2540  READER   *****  DMK00990
+*****                00D           2540P  PUNCH   2540  PUNCH    *****  DMK00990
+*****                00E           1403N1 PRTR    1403N1 PRTR    *****  DMK00950
+*****                01F           3215 PRT/KYB   PRT/KYBD CONS  *****  DMK01020
+*****              040-05F         3277-2 TERM    SPECIALS       *****  DMK01040
+**********************************************************************  DMK01170
+**********************************************************************  DMK01180
+         SPACE 2                                                        DMK01190
+         RDEVICE ADDRESS=009,DEVTYPE=3277                               DMK01230
+         RDEVICE ADDRESS=00C,DEVTYPE=2540R                              DMK01290
+         RDEVICE ADDRESS=00D,DEVTYPE=2540P,CLASS=P                      DMK01320
+         RDEVICE ADDRESS=(00E),DEVTYPE=1403,FEATURE=UNVCHSET,          *DMK01250
+               CLASS=(C,A,L,T)                                          DMK01260
+         RDEVICE ADDRESS=01F,DEVTYPE=3215                               DMK01280
+         RDEVICE ADDRESS=(040,32),DEVTYPE=3277                          DMK01380
+**********************************************************************  DMK01640
+*****  CHANNEL ONE  ( 100 ) DEVICES                              *****  DMK01650
+*****  ----------------------------                              *****  DMK01660
+*****          DEVICE ADDRESS      DEVICE TYPE    SPECIAL NOTES  *****  DMK01670
+*****          --------------      -----------    -------------  *****  DMK01680
+*****              130             3330 DASD                     *****  DMK01690
+*****              150             3350 DASD                     *****  DMK01690
+**********************************************************************  DMK01710
+         RDEVICE ADDRESS=(130,16),DEVTYPE=3330,MODEL=1                  DMK01720
+         RDEVICE ADDRESS=(150,16),DEVTYPE=3350                          DMK01730
+**********************************************************************  DMK02150
+*****  CHANNEL FIVE  ( 500 ) DEVICES                             *****  DMK02160
+*****  -----------------------------                             *****  DMK02170
+*****          DEVICE ADDRESS      DEVICE TYPE    SPECIAL NOTES  *****  DMK02180
+*****          --------------      -----------    -------------  *****  DMK02190
+*****              580             7420-8   TAPE  LIFETIME TAPE  *****  DMK02220
+**********************************************************************  DMK02240
+         RDEVICE ADDRESS=(580,16),DEVTYPE=3420,MODEL=8,FEATURE=DUALDENS DMK02280
+**********************************************************************  DMK02600
+*****  CONTROL UNIT DEFINITIONS                                  *****  DMK02610
+*****  ------------------------                                  *****  DMK02620
+**********************************************************************  DMK02630
+         RCTLUNIT ADDRESS=000,CUTYPE=3811                               DMK02640
+         RCTLUNIT ADDRESS=008,CUTYPE=2821                               DMK02650
+         RCTLUNIT ADDRESS=018,CUTYPE=3215                               DMK02660
+         RCTLUNIT ADDRESS=040,CUTYPE=3272,FEATURE=32-DEVICE             DMK02690
+         RCTLUNIT ADDRESS=130,CUTYPE=3830,FEATURE=16-DEVICE             DMK02760
+         RCTLUNIT ADDRESS=150,CUTYPE=3830,FEATURE=16-DEVICE             DMK02770
+         RCTLUNIT ADDRESS=580,CUTYPE=3803,FEATURE=16-DEVICE             DMK02900
+**********************************************************************  DMK03000
+*****  CHANNEL UNIT DEFINITIONS                                  *****  DMK03010
+*****  ------------------------                                  *****  DMK03020
+**********************************************************************  DMK03030
+         RCHANNEL ADDRESS=0,CHTYPE=MULTIPLEXOR                          DMK03040
+         RCHANNEL ADDRESS=1,CHTYPE=BLKMPXR                              DMK03050
+         RCHANNEL ADDRESS=2,CHTYPE=BLKMPXR                              DMK03060
+         RCHANNEL ADDRESS=3,CHTYPE=BLKMPXR                              DMK03070
+         RCHANNEL ADDRESS=4,CHTYPE=BLKMPXR                              DMK03080
+         RCHANNEL ADDRESS=5,CHTYPE=BLKMPXR                              DMK03090
+**********************************************************************  DMK03120
+*****  CONSOLE UNIT DEFINITIONS                                  *****  DMK03130
+*****  ------------------------                                  *****  DMK03140
+**********************************************************************  DMK03150
+         RIOGEN CONS=01F,ALTCONS=(009)                                  DMK03160
+         END                                                            DMK03380
+

@@ -1,0 +1,35 @@
+#
+# Sample configuration file for Hercules ESA/390 emulator
+# Updated by CardinalBytes
+#
+
+ARCHMODE S/370		# Set archtecture
+CPUSERIAL 000777        # CPU serial number
+CPUMODEL  3158          # CPU model number
+MAINSIZE  2             # Main storage size in megabytes
+XPNDSIZE  0             # Expanded storage size in megabytes
+CNSLPORT  3270          # TCP port number to which consoles connect
+NUMCPU    1             # Number of CPUs
+LOADPARM  0120....      # IPL parameter
+OSTAILOR  VM            # OS tailoring
+PANRATE   FAST          # Panel refresh rate
+
+
+# .-----------------------Device number
+# |     .-----------------Device type
+# |     |       .---------File name and parameters
+# |     |       |
+# V     V       V
+#---    ----    --------------------
+0009	3270	
+000C    3505    
+000D    3525    punch00d.txt ascii
+000E    1403    print00e.txt crlf
+001F    3215
+0040	3270
+0041	3270
+0580    3420    dmkddr.aws 
+0581	3420	images/VMREL6.ddr.aws
+0582	3420	images/CPR6L0.ddr.aws
+0131    3330    VMREL6.3330-1
+0132	3330	CPR6L0.3330-1 

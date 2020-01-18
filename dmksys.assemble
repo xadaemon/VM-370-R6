@@ -1,0 +1,15 @@
+USERID MAINT    CLASS A NAME DMKSYS      ASSEMBLE         11/27/00  21:17:40
+:READ  DMKSYS   ASSEMBLE B1 MNT194  8/30/85   5:23
+SYS      TITLE 'DMKSYS FOR 3330    RELEASE 6'                           DMK00010
+DMKSYS   CSECT                                                          DMK00020
+         SYSOWN (VMREL6,TEMP)                                           DMK00030
+         SYSRES SYSVOL=VMREL6,SYSRES=131,SYSTYPE=3330,                 XDMK00040
+               SYSNUC=7,SYSWRM=10,SYSERR=11,SYSCKP=202                  DMK00050
+         SYSMON AUTO=NO                                                 DMK00060
+         SYSJRL                                                         DMK00070
+         SYSCOR RMSIZE=2048K,AP=NO                                      DMK00080
+         SYSOPR SYSOPER=OPERATOR,SYSDUMP=OPERATNS                       DMK00090
+         SYSTIME ZONE=0,LOC=WEST,ID=PST                                 DMK00100
+         SYSLOCS                                                        DMK00110
+         END                                                            DMK00120
+
